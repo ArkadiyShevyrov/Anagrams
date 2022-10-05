@@ -1,26 +1,6 @@
 package org.example;
 
-import java.util.Arrays;
-import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.stream.Collectors;
-
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        Scanner scanner = new Scanner(System.in);
-
-        String string = scanner.nextLine();
-        System.out.println(flipWordInLine(string));
-//        System.out.println(flipWordInLine("abcd efgh"));
-//        System.out.println(flipWordInLine("a132bcd efg3!h"));
-    }
+public class Anagram {
 
     public static String flipWordInLine(String string) {
         String[] words = string.split(" ");
@@ -34,7 +14,7 @@ public class App
         return String.join(" ", flippedWords);
     }
 
-    public static String flipWord(String word) {
+    private static String flipWord(String word) {
         char[] flippedWord = new char[word.length()];
         boolean[] indexesLetters = new boolean[word.length()];
 
