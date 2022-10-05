@@ -3,6 +3,13 @@ package org.example;
 public class Anagram {
 
     public static String flipWordInLine(String string) {
+        if (string == null) {
+            return null;
+        }
+        if (string.equals("")) {
+            return "";
+        }
+
         String[] words = string.split(" ");
         String[] flippedWords = new String[words.length];
 

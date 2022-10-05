@@ -6,11 +6,12 @@ public class Application
 {
     public static void main( String[] args )
     {
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
+//
+//        String string = scanner.nextLine();
+        String string = "112ab12";
 
-        String string = scanner.nextLine();
-
-        System.out.println(Anagram.flipWordInLine(string));
+        System.out.println(Anagram.flipWordInLine("     a"));
     }
 
 
